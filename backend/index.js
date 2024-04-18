@@ -20,6 +20,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 
 //routes
-app.use('/api/v1/users', user)
+app.use('/api/v1/users', userRoutes)
 
 app.listen(PORT, () => console.log("Server is running on") + PORT)
